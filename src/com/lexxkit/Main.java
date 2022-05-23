@@ -3,12 +3,8 @@ package com.lexxkit;
 public class Main {
 
     public static void main(String[] args) {
-        Car car = new Car();
-        Car car2 = new Car();
-        car.modelName = "car1";
-        car2.modelName = "car2";
-        car.wheelsCount = 4;
-        car2.wheelsCount = 4;
+        Car car = new Car("car1", 4);
+        Car car2 = new Car("car2", 4);
 
         Truck truck = new Truck();
         Truck truck2 = new Truck();
