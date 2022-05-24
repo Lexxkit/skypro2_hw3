@@ -21,13 +21,5 @@ public class Main {
         for (int i = 0; i < vehiclesAtService.length; i++) {
             vehiclesAtService[i].check();
         }
-
-//        ServiceStation station = new ServiceStationImpl();
-//        station.check(car, null, null);
-//        station.check(car2, null, null);
-//        station.check(null, bicycle, null);
-//        station.check(null, bicycle2, null);
-//        station.check(null, null, truck);
-//        station.check(null, null, truck2);
     }
 }
