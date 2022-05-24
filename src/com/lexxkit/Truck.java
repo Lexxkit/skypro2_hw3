@@ -1,11 +1,9 @@
 package com.lexxkit;
 
-public class Truck {
-    public String modelName;
-    public int wheelsCount;
+public class Truck extends Vehicle {
 
-    public void updateTyre() {
-        System.out.println("Меняем покрышку");
+    public Truck(String modelName, int wheelsCount) {
+        super(modelName, wheelsCount);
     }
 
     public void checkEngine() {
@@ -14,5 +12,13 @@ public class Truck {
 
     public void checkTrailer() {
         System.out.println("Проверяем прицеп");
+    }
+
+    @Override
+    public void check() {
+        System.out.println("Обслуживаем " + getModelName());
+        updateTyre();
+        checkEngine();
+        checkTrailer();
     }
 }

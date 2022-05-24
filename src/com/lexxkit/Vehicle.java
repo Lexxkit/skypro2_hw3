@@ -1,6 +1,6 @@
 package com.lexxkit;
 
-public abstract class Vehicle {
+public abstract class Vehicle implements ServiceStation {
     private String modelName;
     private int wheelsCount;
 
@@ -20,4 +20,7 @@ public abstract class Vehicle {
     public void updateTyre() {
         System.out.println("Меняем покрышку");
     }
+
+    @Override
+    public abstract void check();
 }
