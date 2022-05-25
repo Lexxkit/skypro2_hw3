@@ -18,7 +18,9 @@ public abstract class Vehicle implements ServiceStation {
     }
 
     public void updateTyre() {
-        System.out.println("Меняем покрышку");
+        for (int i = 0; i < getWheelsCount(); i++) {
+            System.out.println("Меняем покрышку " + (i + 1));
+        }
     }
 
     @Override
