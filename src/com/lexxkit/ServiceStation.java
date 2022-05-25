@@ -1,5 +1,7 @@
 package com.lexxkit;
 
-public interface ServiceStation {
-    void check();
+public class ServiceStation {
+    void giveService(Service service) {
+        service.check();
+    }
 }

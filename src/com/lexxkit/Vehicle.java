@@ -1,6 +1,6 @@
 package com.lexxkit;
 
-public abstract class Vehicle implements ServiceStation {
+public abstract class Vehicle implements Service {
     private String modelName;
     private int wheelsCount;
 

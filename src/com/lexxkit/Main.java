@@ -12,14 +12,16 @@ public class Main {
         Bicycle bicycle = new Bicycle("bicycle1", 2);
         Bicycle bicycle2 = new Bicycle("bicycle2", 2);
 
-        ServiceStation[] vehiclesAtService = {
+        Service[] vehiclesAtService = {
                 car, car2,
                 truck, truck2,
                 bicycle, bicycle2
         };
 
-        for (int i = 0; i < vehiclesAtService.length; i++) {
-            vehiclesAtService[i].check();
+        ServiceStation serviceStation = new ServiceStation();
+
+        for (Service vehicle : vehiclesAtService) {
+            serviceStation.giveService(vehicle);
         }
     }
 }
